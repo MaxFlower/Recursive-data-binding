@@ -1,0 +1,18 @@
+<div class="container box">
+  <div class="row">
+    <input [(ngModel)]="data.stringData">
+    <div>
+      <span>Уровень: {{iteration}}</span><br/>
+      <span>Значение:{{data.stringData}}</span>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+ <div class="col-xs-6">
+   <app-recursive [(data)] = "data.stringData" [iteration]="iteration" *ngIf="iteration < maxIteration"></app-recursive>
+ </div>
+ <div class="col-xs-6">
+   <app-recursive [(data)] = "data.stringData" [iteration]="iteration" *ngIf="iteration < maxIteration"></app-recursive>
+ </div>
+ </div> 
