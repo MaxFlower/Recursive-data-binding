@@ -1,6 +1,4 @@
-# Relation between .
-
-Relation between parent and children in Angular.
+# Relation between parent and children in Angular.
 
 There are three recursive components.
 
